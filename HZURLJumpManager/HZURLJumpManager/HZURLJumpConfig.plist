@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Test</key>
+	<dict>
+		<key>hz.module.controller.name</key>
+		<string>HZTestViewController</string>
+		<key>hz.module.name</key>
+		<string>Test</string>
+		<key>hz.module.sb.idf</key>
+		<string>kTestVcIdf</string>
+		<key>hz.module.sb.name</key>
+		<string>Main</string>
+	</dict>
+</dict>
+</plist>

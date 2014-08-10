@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03AB9E7319972AC800A073CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB9E7219972AC800A073CC /* Foundation.framework */; };
+		03AB9E7519972AC800A073CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB9E7419972AC800A073CC /* CoreGraphics.framework */; };
+		03AB9E7719972AC800A073CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB9E7619972AC800A073CC /* UIKit.framework */; };
+		03AB9E7D19972AC800A073CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03AB9E7B19972AC800A073CC /* InfoPlist.strings */; };
+		03AB9E7F19972AC800A073CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9E7E19972AC800A073CC /* main.m */; };
+		03AB9E8319972AC800A073CC /* HZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9E8219972AC800A073CC /* HZAppDelegate.m */; };
+		03AB9E8619972AC800A073CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03AB9E8419972AC800A073CC /* Main.storyboard */; };
+		03AB9E8919972AC800A073CC /* HZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9E8819972AC800A073CC /* HZViewController.m */; };
+		03AB9E8B19972AC800A073CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03AB9E8A19972AC800A073CC /* Images.xcassets */; };
+		03AB9E9219972AC800A073CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB9E9119972AC800A073CC /* XCTest.framework */; };
+		03AB9E9319972AC800A073CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB9E7219972AC800A073CC /* Foundation.framework */; };
+		03AB9E9419972AC800A073CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB9E7619972AC800A073CC /* UIKit.framework */; };
+		03AB9E9C19972AC800A073CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03AB9E9A19972AC800A073CC /* InfoPlist.strings */; };
+		03AB9E9E19972AC800A073CC /* HZURLJumpManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9E9D19972AC800A073CC /* HZURLJumpManagerTests.m */; };
+		03AB9ED219973C6900A073CC /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EB319973C6900A073CC /* NSDate+Extension.m */; };
+		03AB9ED319973C6900A073CC /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EB619973C6900A073CC /* NSDictionary+Extension.m */; };
+		03AB9ED419973C6900A073CC /* NSFileManager+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EB919973C6900A073CC /* NSFileManager+Extension.m */; };
+		03AB9ED519973C6900A073CC /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EBC19973C6900A073CC /* NSString+Extension.m */; };
+		03AB9ED619973C6900A073CC /* NSURL+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EBF19973C6900A073CC /* NSURL+Extension.m */; };
+		03AB9ED719973C6900A073CC /* PublicDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EC219973C6900A073CC /* PublicDefines.m */; };
+		03AB9ED819973C6900A073CC /* UIAlertView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EC519973C6900A073CC /* UIAlertView+Extension.m */; };
+		03AB9ED919973C6900A073CC /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EC819973C6900A073CC /* UIButton+Extension.m */; };
+		03AB9EDA19973C6900A073CC /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9ECB19973C6900A073CC /* UIColor+Extension.m */; };
+		03AB9EDB19973C6900A073CC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9ECE19973C6900A073CC /* UIImage+Extension.m */; };
+		03AB9EDC19973C6900A073CC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9ED119973C6900A073CC /* UIView+Extension.m */; };
+		03AB9EDF1997414400A073CC /* HZTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EDE1997414400A073CC /* HZTestViewController.m */; };
+		03AB9EF11997584000A073CC /* HZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EEC1997584000A073CC /* HZBaseViewController.m */; };
+		03AB9EF21997584000A073CC /* HZURLJumpConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03AB9EEE1997584000A073CC /* HZURLJumpConfig.plist */; };
+		03AB9EF31997584000A073CC /* HZURLJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EF01997584000A073CC /* HZURLJumpManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03AB9E9519972AC800A073CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03AB9E6719972AC800A073CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03AB9E6E19972AC800A073CC;
+			remoteInfo = HZURLJumpManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03AB9E6F19972AC800A073CC /* HZURLJumpManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZURLJumpManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03AB9E7219972AC800A073CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03AB9E7419972AC800A073CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		03AB9E7619972AC800A073CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03AB9E7A19972AC800A073CC /* HZURLJumpManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HZURLJumpManager-Info.plist"; sourceTree = "<group>"; };
+		03AB9E7C19972AC800A073CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03AB9E7E19972AC800A073CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03AB9E8019972AC800A073CC /* HZURLJumpManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HZURLJumpManager-Prefix.pch"; sourceTree = "<group>"; };
+		03AB9E8119972AC800A073CC /* HZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZAppDelegate.h; sourceTree = "<group>"; };
+		03AB9E8219972AC800A073CC /* HZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZAppDelegate.m; sourceTree = "<group>"; };
+		03AB9E8519972AC800A073CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03AB9E8719972AC800A073CC /* HZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZViewController.h; sourceTree = "<group>"; };
+		03AB9E8819972AC800A073CC /* HZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZViewController.m; sourceTree = "<group>"; };
+		03AB9E8A19972AC800A073CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		03AB9E9019972AC800A073CC /* HZURLJumpManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZURLJumpManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03AB9E9119972AC800A073CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		03AB9E9919972AC800A073CC /* HZURLJumpManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HZURLJumpManagerTests-Info.plist"; sourceTree = "<group>"; };
+		03AB9E9B19972AC800A073CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03AB9E9D19972AC800A073CC /* HZURLJumpManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZURLJumpManagerTests.m; sourceTree = "<group>"; };
+		03AB9EB019973C6900A073CC /* HZExtensionKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZExtensionKit.h; sourceTree = "<group>"; };
+		03AB9EB219973C6900A073CC /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		03AB9EB319973C6900A073CC /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		03AB9EB519973C6900A073CC /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
+		03AB9EB619973C6900A073CC /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
+		03AB9EB819973C6900A073CC /* NSFileManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Extension.h"; sourceTree = "<group>"; };
+		03AB9EB919973C6900A073CC /* NSFileManager+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Extension.m"; sourceTree = "<group>"; };
+		03AB9EBB19973C6900A073CC /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		03AB9EBC19973C6900A073CC /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		03AB9EBE19973C6900A073CC /* NSURL+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Extension.h"; sourceTree = "<group>"; };
+		03AB9EBF19973C6900A073CC /* NSURL+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Extension.m"; sourceTree = "<group>"; };
+		03AB9EC119973C6900A073CC /* PublicDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicDefines.h; sourceTree = "<group>"; };
+		03AB9EC219973C6900A073CC /* PublicDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicDefines.m; sourceTree = "<group>"; };
+		03AB9EC419973C6900A073CC /* UIAlertView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Extension.h"; sourceTree = "<group>"; };
+		03AB9EC519973C6900A073CC /* UIAlertView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Extension.m"; sourceTree = "<group>"; };
+		03AB9EC719973C6900A073CC /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		03AB9EC819973C6900A073CC /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		03AB9ECA19973C6900A073CC /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		03AB9ECB19973C6900A073CC /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		03AB9ECD19973C6900A073CC /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		03AB9ECE19973C6900A073CC /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		03AB9ED019973C6900A073CC /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		03AB9ED119973C6900A073CC /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		03AB9EDD1997414400A073CC /* HZTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTestViewController.h; sourceTree = "<group>"; };
+		03AB9EDE1997414400A073CC /* HZTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZTestViewController.m; sourceTree = "<group>"; };
+		03AB9EEB1997584000A073CC /* HZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZBaseViewController.h; sourceTree = "<group>"; };
+		03AB9EEC1997584000A073CC /* HZBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZBaseViewController.m; sourceTree = "<group>"; };
+		03AB9EEE1997584000A073CC /* HZURLJumpConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HZURLJumpConfig.plist; sourceTree = "<group>"; };
+		03AB9EEF1997584000A073CC /* HZURLJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZURLJumpManager.h; sourceTree = "<group>"; };
+		03AB9EF01997584000A073CC /* HZURLJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZURLJumpManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03AB9E6C19972AC800A073CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AB9E7519972AC800A073CC /* CoreGraphics.framework in Frameworks */,
+				03AB9E7719972AC800A073CC /* UIKit.framework in Frameworks */,
+				03AB9E7319972AC800A073CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03AB9E8D19972AC800A073CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AB9E9219972AC800A073CC /* XCTest.framework in Frameworks */,
+				03AB9E9419972AC800A073CC /* UIKit.framework in Frameworks */,
+				03AB9E9319972AC800A073CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03AB9E6619972AC800A073CC = {
+			isa = PBXGroup;
+			children = (
+				03AB9E7819972AC800A073CC /* HZURLJumpManager */,
+				03AB9E9719972AC800A073CC /* HZURLJumpManagerTests */,
+				03AB9E7119972AC800A073CC /* Frameworks */,
+				03AB9E7019972AC800A073CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03AB9E7019972AC800A073CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9E6F19972AC800A073CC /* HZURLJumpManager.app */,
+				03AB9E9019972AC800A073CC /* HZURLJumpManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03AB9E7119972AC800A073CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9E7219972AC800A073CC /* Foundation.framework */,
+				03AB9E7419972AC800A073CC /* CoreGraphics.framework */,
+				03AB9E7619972AC800A073CC /* UIKit.framework */,
+				03AB9E9119972AC800A073CC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03AB9E7819972AC800A073CC /* HZURLJumpManager */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EEA1997584000A073CC /* HZBaseViewController */,
+				03AB9EED1997584000A073CC /* HZURLJumpManager */,
+				03AB9EAF19973C6900A073CC /* HZExtensionKit */,
+				03AB9E8119972AC800A073CC /* HZAppDelegate.h */,
+				03AB9E8219972AC800A073CC /* HZAppDelegate.m */,
+				03AB9E8419972AC800A073CC /* Main.storyboard */,
+				03AB9E8719972AC800A073CC /* HZViewController.h */,
+				03AB9E8819972AC800A073CC /* HZViewController.m */,
+				03AB9E8A19972AC800A073CC /* Images.xcassets */,
+				03AB9E7919972AC800A073CC /* Supporting Files */,
+				03AB9EDD1997414400A073CC /* HZTestViewController.h */,
+				03AB9EDE1997414400A073CC /* HZTestViewController.m */,
+			);
+			path = HZURLJumpManager;
+			sourceTree = "<group>";
+		};
+		03AB9E7919972AC800A073CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9E7A19972AC800A073CC /* HZURLJumpManager-Info.plist */,
+				03AB9E7B19972AC800A073CC /* InfoPlist.strings */,
+				03AB9E7E19972AC800A073CC /* main.m */,
+				03AB9E8019972AC800A073CC /* HZURLJumpManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03AB9E9719972AC800A073CC /* HZURLJumpManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9E9D19972AC800A073CC /* HZURLJumpManagerTests.m */,
+				03AB9E9819972AC800A073CC /* Supporting Files */,
+			);
+			path = HZURLJumpManagerTests;
+			sourceTree = "<group>";
+		};
+		03AB9E9819972AC800A073CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9E9919972AC800A073CC /* HZURLJumpManagerTests-Info.plist */,
+				03AB9E9A19972AC800A073CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03AB9EAF19973C6900A073CC /* HZExtensionKit */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EB019973C6900A073CC /* HZExtensionKit.h */,
+				03AB9EB119973C6900A073CC /* NSDate */,
+				03AB9EB419973C6900A073CC /* NSDictionary */,
+				03AB9EB719973C6900A073CC /* NSFileManager */,
+				03AB9EBA19973C6900A073CC /* NSString */,
+				03AB9EBD19973C6900A073CC /* NSURL */,
+				03AB9EC019973C6900A073CC /* Public */,
+				03AB9EC319973C6900A073CC /* UIAlertView */,
+				03AB9EC619973C6900A073CC /* UIButton */,
+				03AB9EC919973C6900A073CC /* UIColor */,
+				03AB9ECC19973C6900A073CC /* UIImage */,
+				03AB9ECF19973C6900A073CC /* UIView */,
+			);
+			path = HZExtensionKit;
+			sourceTree = "<group>";
+		};
+		03AB9EB119973C6900A073CC /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EB219973C6900A073CC /* NSDate+Extension.h */,
+				03AB9EB319973C6900A073CC /* NSDate+Extension.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		03AB9EB419973C6900A073CC /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EB519973C6900A073CC /* NSDictionary+Extension.h */,
+				03AB9EB619973C6900A073CC /* NSDictionary+Extension.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		03AB9EB719973C6900A073CC /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EB819973C6900A073CC /* NSFileManager+Extension.h */,
+				03AB9EB919973C6900A073CC /* NSFileManager+Extension.m */,
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
+		03AB9EBA19973C6900A073CC /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EBB19973C6900A073CC /* NSString+Extension.h */,
+				03AB9EBC19973C6900A073CC /* NSString+Extension.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		03AB9EBD19973C6900A073CC /* NSURL */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EBE19973C6900A073CC /* NSURL+Extension.h */,
+				03AB9EBF19973C6900A073CC /* NSURL+Extension.m */,
+			);
+			path = NSURL;
+			sourceTree = "<group>";
+		};
+		03AB9EC019973C6900A073CC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EC119973C6900A073CC /* PublicDefines.h */,
+				03AB9EC219973C6900A073CC /* PublicDefines.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		03AB9EC319973C6900A073CC /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EC419973C6900A073CC /* UIAlertView+Extension.h */,
+				03AB9EC519973C6900A073CC /* UIAlertView+Extension.m */,
+			);
+			path = UIAlertView;
+			sourceTree = "<group>";
+		};
+		03AB9EC619973C6900A073CC /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EC719973C6900A073CC /* UIButton+Extension.h */,
+				03AB9EC819973C6900A073CC /* UIButton+Extension.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		03AB9EC919973C6900A073CC /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9ECA19973C6900A073CC /* UIColor+Extension.h */,
+				03AB9ECB19973C6900A073CC /* UIColor+Extension.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		03AB9ECC19973C6900A073CC /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9ECD19973C6900A073CC /* UIImage+Extension.h */,
+				03AB9ECE19973C6900A073CC /* UIImage+Extension.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		03AB9ECF19973C6900A073CC /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9ED019973C6900A073CC /* UIView+Extension.h */,
+				03AB9ED119973C6900A073CC /* UIView+Extension.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		03AB9EEA1997584000A073CC /* HZBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EEB1997584000A073CC /* HZBaseViewController.h */,
+				03AB9EEC1997584000A073CC /* HZBaseViewController.m */,
+			);
+			path = HZBaseViewController;
+			sourceTree = "<group>";
+		};
+		03AB9EED1997584000A073CC /* HZURLJumpManager */ = {
+			isa = PBXGroup;
+			children = (
+				03AB9EEE1997584000A073CC /* HZURLJumpConfig.plist */,
+				03AB9EEF1997584000A073CC /* HZURLJumpManager.h */,
+				03AB9EF01997584000A073CC /* HZURLJumpManager.m */,
+			);
+			path = HZURLJumpManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03AB9E6E19972AC800A073CC /* HZURLJumpManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03AB9EA119972AC800A073CC /* Build configuration list for PBXNativeTarget "HZURLJumpManager" */;
+			buildPhases = (
+				03AB9E6B19972AC800A073CC /* Sources */,
+				03AB9E6C19972AC800A073CC /* Frameworks */,
+				03AB9E6D19972AC800A073CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZURLJumpManager;
+			productName = HZURLJumpManager;
+			productReference = 03AB9E6F19972AC800A073CC /* HZURLJumpManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03AB9E8F19972AC800A073CC /* HZURLJumpManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03AB9EA419972AC800A073CC /* Build configuration list for PBXNativeTarget "HZURLJumpManagerTests" */;
+			buildPhases = (
+				03AB9E8C19972AC800A073CC /* Sources */,
+				03AB9E8D19972AC800A073CC /* Frameworks */,
+				03AB9E8E19972AC800A073CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03AB9E9619972AC800A073CC /* PBXTargetDependency */,
+			);
+			name = HZURLJumpManagerTests;
+			productName = HZURLJumpManagerTests;
+			productReference = 03AB9E9019972AC800A073CC /* HZURLJumpManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03AB9E6719972AC800A073CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HZ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = History;
+				TargetAttributes = {
+					03AB9E8F19972AC800A073CC = {
+						TestTargetID = 03AB9E6E19972AC800A073CC;
+					};
+				};
+			};
+			buildConfigurationList = 03AB9E6A19972AC800A073CC /* Build configuration list for PBXProject "HZURLJumpManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03AB9E6619972AC800A073CC;
+			productRefGroup = 03AB9E7019972AC800A073CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03AB9E6E19972AC800A073CC /* HZURLJumpManager */,
+				03AB9E8F19972AC800A073CC /* HZURLJumpManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03AB9E6D19972AC800A073CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AB9E8B19972AC800A073CC /* Images.xcassets in Resources */,
+				03AB9E7D19972AC800A073CC /* InfoPlist.strings in Resources */,
+				03AB9EF21997584000A073CC /* HZURLJumpConfig.plist in Resources */,
+				03AB9E8619972AC800A073CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03AB9E8E19972AC800A073CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AB9E9C19972AC800A073CC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03AB9E6B19972AC800A073CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AB9EDB19973C6900A073CC /* UIImage+Extension.m in Sources */,
+				03AB9EF11997584000A073CC /* HZBaseViewController.m in Sources */,
+				03AB9ED719973C6900A073CC /* PublicDefines.m in Sources */,
+				03AB9ED419973C6900A073CC /* NSFileManager+Extension.m in Sources */,
+				03AB9E8919972AC800A073CC /* HZViewController.m in Sources */,
+				03AB9EDA19973C6900A073CC /* UIColor+Extension.m in Sources */,
+				03AB9ED619973C6900A073CC /* NSURL+Extension.m in Sources */,
+				03AB9ED219973C6900A073CC /* NSDate+Extension.m in Sources */,
+				03AB9ED819973C6900A073CC /* UIAlertView+Extension.m in Sources */,
+				03AB9ED319973C6900A073CC /* NSDictionary+Extension.m in Sources */,
+				03AB9E8319972AC800A073CC /* HZAppDelegate.m in Sources */,
+				03AB9EF31997584000A073CC /* HZURLJumpManager.m in Sources */,
+				03AB9ED519973C6900A073CC /* NSString+Extension.m in Sources */,
+				03AB9ED919973C6900A073CC /* UIButton+Extension.m in Sources */,
+				03AB9EDF1997414400A073CC /* HZTestViewController.m in Sources */,
+				03AB9EDC19973C6900A073CC /* UIView+Extension.m in Sources */,
+				03AB9E7F19972AC800A073CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03AB9E8C19972AC800A073CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AB9E9E19972AC800A073CC /* HZURLJumpManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03AB9E9619972AC800A073CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03AB9E6E19972AC800A073CC /* HZURLJumpManager */;
+			targetProxy = 03AB9E9519972AC800A073CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03AB9E7B19972AC800A073CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03AB9E7C19972AC800A073CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		03AB9E8419972AC800A073CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03AB9E8519972AC800A073CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03AB9E9A19972AC800A073CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03AB9E9B19972AC800A073CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03AB9E9F19972AC800A073CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03AB9EA019972AC800A073CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03AB9EA219972AC800A073CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HZURLJumpManager/HZURLJumpManager-Prefix.pch";
+				INFOPLIST_FILE = "HZURLJumpManager/HZURLJumpManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		03AB9EA319972AC800A073CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HZURLJumpManager/HZURLJumpManager-Prefix.pch";
+				INFOPLIST_FILE = "HZURLJumpManager/HZURLJumpManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		03AB9EA519972AC800A073CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HZURLJumpManager.app/HZURLJumpManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HZURLJumpManager/HZURLJumpManager-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HZURLJumpManagerTests/HZURLJumpManagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		03AB9EA619972AC800A073CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HZURLJumpManager.app/HZURLJumpManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HZURLJumpManager/HZURLJumpManager-Prefix.pch";
+				INFOPLIST_FILE = "HZURLJumpManagerTests/HZURLJumpManagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03AB9E6A19972AC800A073CC /* Build configuration list for PBXProject "HZURLJumpManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03AB9E9F19972AC800A073CC /* Debug */,
+				03AB9EA019972AC800A073CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03AB9EA119972AC800A073CC /* Build configuration list for PBXNativeTarget "HZURLJumpManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03AB9EA219972AC800A073CC /* Debug */,
+				03AB9EA319972AC800A073CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03AB9EA419972AC800A073CC /* Build configuration list for PBXNativeTarget "HZURLJumpManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03AB9EA519972AC800A073CC /* Debug */,
+				03AB9EA619972AC800A073CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03AB9E6719972AC800A073CC /* Project object */;
+}
