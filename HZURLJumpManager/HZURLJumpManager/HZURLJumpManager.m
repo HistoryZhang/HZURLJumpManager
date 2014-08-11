@@ -98,6 +98,9 @@ NSString * const HZGoHostKey                = @"go";
 - (void)pushToURL:(NSURL *)url fromNavigationController:(UINavigationController *)navigationController
 {
     if (!navigationController || ![navigationController isKindOfClass:[UINavigationController class]]) {
+#ifdef DEBUG
+        [UIAlertView showMessage:@"无效的navigationController"];
+#endif
         return;
     }
     NSDictionary *moduleInfo = [self analyzeURL:url];
@@ -143,7 +146,10 @@ NSString * const HZGoHostKey                = @"go";
  */
 - (void)presentToURL:(NSURL *)url fromViewController:(UIViewController *)viewController
 {
-    if (!viewController || [viewController isKindOfClass:[UIViewController class]]) {
+    if (!viewController || ![viewController isKindOfClass:[UIViewController class]]) {
+#ifdef DEBUG
+        [UIAlertView showMessage:@"无效的viewController"];
+#endif
         return;
     }
     NSDictionary *moduleInfo = [self analyzeURL:url];
