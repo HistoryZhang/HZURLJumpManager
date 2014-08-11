@@ -14,7 +14,7 @@
 		03AB9E7F19972AC800A073CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9E7E19972AC800A073CC /* main.m */; };
 		03AB9E8319972AC800A073CC /* HZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9E8219972AC800A073CC /* HZAppDelegate.m */; };
 		03AB9E8619972AC800A073CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03AB9E8419972AC800A073CC /* Main.storyboard */; };
-		03AB9E8919972AC800A073CC /* HZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9E8819972AC800A073CC /* HZViewController.m */; };
+		03AB9E8919972AC800A073CC /* HZPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9E8819972AC800A073CC /* HZPushViewController.m */; };
 		03AB9E8B19972AC800A073CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03AB9E8A19972AC800A073CC /* Images.xcassets */; };
 		03AB9E9219972AC800A073CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB9E9119972AC800A073CC /* XCTest.framework */; };
 		03AB9E9319972AC800A073CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB9E7219972AC800A073CC /* Foundation.framework */; };
@@ -32,10 +32,13 @@
 		03AB9EDA19973C6900A073CC /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9ECB19973C6900A073CC /* UIColor+Extension.m */; };
 		03AB9EDB19973C6900A073CC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9ECE19973C6900A073CC /* UIImage+Extension.m */; };
 		03AB9EDC19973C6900A073CC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9ED119973C6900A073CC /* UIView+Extension.m */; };
-		03AB9EDF1997414400A073CC /* HZTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EDE1997414400A073CC /* HZTestViewController.m */; };
+		03AB9EDF1997414400A073CC /* HZPlistTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EDE1997414400A073CC /* HZPlistTestViewController.m */; };
 		03AB9EF11997584000A073CC /* HZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EEC1997584000A073CC /* HZBaseViewController.m */; };
 		03AB9EF21997584000A073CC /* HZURLJumpConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03AB9EEE1997584000A073CC /* HZURLJumpConfig.plist */; };
 		03AB9EF31997584000A073CC /* HZURLJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB9EF01997584000A073CC /* HZURLJumpManager.m */; };
+		03F1772119985FE20068BF6A /* HZPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1772019985FE20068BF6A /* HZPresentViewController.m */; };
+		03F17724199867060068BF6A /* HZRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F17723199867060068BF6A /* HZRegisterViewController.m */; };
+		03F17727199867930068BF6A /* HZRegisterTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F17726199867930068BF6A /* HZRegisterTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +63,8 @@
 		03AB9E8119972AC800A073CC /* HZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZAppDelegate.h; sourceTree = "<group>"; };
 		03AB9E8219972AC800A073CC /* HZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZAppDelegate.m; sourceTree = "<group>"; };
 		03AB9E8519972AC800A073CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		03AB9E8719972AC800A073CC /* HZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZViewController.h; sourceTree = "<group>"; };
-		03AB9E8819972AC800A073CC /* HZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZViewController.m; sourceTree = "<group>"; };
+		03AB9E8719972AC800A073CC /* HZPushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZPushViewController.h; sourceTree = "<group>"; };
+		03AB9E8819972AC800A073CC /* HZPushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZPushViewController.m; sourceTree = "<group>"; };
 		03AB9E8A19972AC800A073CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03AB9E9019972AC800A073CC /* HZURLJumpManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZURLJumpManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03AB9E9119972AC800A073CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -91,13 +94,19 @@
 		03AB9ECE19973C6900A073CC /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		03AB9ED019973C6900A073CC /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		03AB9ED119973C6900A073CC /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		03AB9EDD1997414400A073CC /* HZTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTestViewController.h; sourceTree = "<group>"; };
-		03AB9EDE1997414400A073CC /* HZTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZTestViewController.m; sourceTree = "<group>"; };
+		03AB9EDD1997414400A073CC /* HZPlistTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPlistTestViewController.h; sourceTree = "<group>"; };
+		03AB9EDE1997414400A073CC /* HZPlistTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPlistTestViewController.m; sourceTree = "<group>"; };
 		03AB9EEB1997584000A073CC /* HZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZBaseViewController.h; sourceTree = "<group>"; };
 		03AB9EEC1997584000A073CC /* HZBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZBaseViewController.m; sourceTree = "<group>"; };
 		03AB9EEE1997584000A073CC /* HZURLJumpConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HZURLJumpConfig.plist; sourceTree = "<group>"; };
 		03AB9EEF1997584000A073CC /* HZURLJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZURLJumpManager.h; sourceTree = "<group>"; };
 		03AB9EF01997584000A073CC /* HZURLJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZURLJumpManager.m; sourceTree = "<group>"; };
+		03F1771F19985FE20068BF6A /* HZPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPresentViewController.h; sourceTree = "<group>"; };
+		03F1772019985FE20068BF6A /* HZPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPresentViewController.m; sourceTree = "<group>"; };
+		03F17722199867060068BF6A /* HZRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZRegisterViewController.h; sourceTree = "<group>"; };
+		03F17723199867060068BF6A /* HZRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZRegisterViewController.m; sourceTree = "<group>"; };
+		03F17725199867930068BF6A /* HZRegisterTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZRegisterTestViewController.h; sourceTree = "<group>"; };
+		03F17726199867930068BF6A /* HZRegisterTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZRegisterTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,12 +172,18 @@
 				03AB9E8119972AC800A073CC /* HZAppDelegate.h */,
 				03AB9E8219972AC800A073CC /* HZAppDelegate.m */,
 				03AB9E8419972AC800A073CC /* Main.storyboard */,
-				03AB9E8719972AC800A073CC /* HZViewController.h */,
-				03AB9E8819972AC800A073CC /* HZViewController.m */,
+				03AB9E8719972AC800A073CC /* HZPushViewController.h */,
+				03AB9E8819972AC800A073CC /* HZPushViewController.m */,
+				03F1771F19985FE20068BF6A /* HZPresentViewController.h */,
+				03F1772019985FE20068BF6A /* HZPresentViewController.m */,
+				03F17722199867060068BF6A /* HZRegisterViewController.h */,
+				03F17723199867060068BF6A /* HZRegisterViewController.m */,
 				03AB9E8A19972AC800A073CC /* Images.xcassets */,
 				03AB9E7919972AC800A073CC /* Supporting Files */,
-				03AB9EDD1997414400A073CC /* HZTestViewController.h */,
-				03AB9EDE1997414400A073CC /* HZTestViewController.m */,
+				03AB9EDD1997414400A073CC /* HZPlistTestViewController.h */,
+				03AB9EDE1997414400A073CC /* HZPlistTestViewController.m */,
+				03F17725199867930068BF6A /* HZRegisterTestViewController.h */,
+				03F17726199867930068BF6A /* HZRegisterTestViewController.m */,
 			);
 			path = HZURLJumpManager;
 			sourceTree = "<group>";
@@ -442,9 +457,10 @@
 				03AB9EF11997584000A073CC /* HZBaseViewController.m in Sources */,
 				03AB9ED719973C6900A073CC /* PublicDefines.m in Sources */,
 				03AB9ED419973C6900A073CC /* NSFileManager+Extension.m in Sources */,
-				03AB9E8919972AC800A073CC /* HZViewController.m in Sources */,
+				03AB9E8919972AC800A073CC /* HZPushViewController.m in Sources */,
 				03AB9EDA19973C6900A073CC /* UIColor+Extension.m in Sources */,
 				03AB9ED619973C6900A073CC /* NSURL+Extension.m in Sources */,
+				03F17724199867060068BF6A /* HZRegisterViewController.m in Sources */,
 				03AB9ED219973C6900A073CC /* NSDate+Extension.m in Sources */,
 				03AB9ED819973C6900A073CC /* UIAlertView+Extension.m in Sources */,
 				03AB9ED319973C6900A073CC /* NSDictionary+Extension.m in Sources */,
@@ -452,9 +468,11 @@
 				03AB9EF31997584000A073CC /* HZURLJumpManager.m in Sources */,
 				03AB9ED519973C6900A073CC /* NSString+Extension.m in Sources */,
 				03AB9ED919973C6900A073CC /* UIButton+Extension.m in Sources */,
-				03AB9EDF1997414400A073CC /* HZTestViewController.m in Sources */,
+				03F1772119985FE20068BF6A /* HZPresentViewController.m in Sources */,
+				03AB9EDF1997414400A073CC /* HZPlistTestViewController.m in Sources */,
 				03AB9EDC19973C6900A073CC /* UIView+Extension.m in Sources */,
 				03AB9E7F19972AC800A073CC /* main.m in Sources */,
+				03F17727199867930068BF6A /* HZRegisterTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,6 +677,7 @@
 				03AB9EA319972AC800A073CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03AB9EA419972AC800A073CC /* Build configuration list for PBXNativeTarget "HZURLJumpManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -667,6 +686,7 @@
 				03AB9EA619972AC800A073CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -29,9 +29,9 @@ NSString * const HZGoHostKey                = @"go";
 
 @interface HZURLJumpManager ()
 {
-    
+    BOOL _canRegisterModule;
 }
-@property (nonatomic, strong) NSDictionary *moduleConfig;
+@property (nonatomic, strong) NSMutableDictionary *moduleConfig;
 @end
 
 @implementation HZURLJumpManager
@@ -42,13 +42,14 @@ NSString * const HZGoHostKey                = @"go";
 - (void)initModuleConfig
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"HZURLJumpConfig" ofType:@"plist"];
-    _moduleConfig = [[NSDictionary alloc] initWithContentsOfFile:path];
+    _moduleConfig = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
 }
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         [self initModuleConfig];
+        _canRegisterModule = YES;
     }
     return self;
 }
@@ -70,7 +71,12 @@ NSString * const HZGoHostKey                = @"go";
  */
 - (void)registerModuleWithDictionary:(NSDictionary *)moduleDictionary
 {
-    
+    if (_canRegisterModule) {
+        [_moduleConfig setObject:moduleDictionary forKey:moduleDictionary[HZModuleNameKey]];
+    }
+    else {
+        NSAssert(false, @"你未开启手动注册开关,请自行在HZURLJumpManager中修改_canRegisterModule=YES");
+    }
 }
 /**
  *  Push A ViewController Using URL

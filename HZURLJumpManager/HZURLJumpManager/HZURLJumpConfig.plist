@@ -2,14 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Test</key>
+	<key>PlistTest</key>
 	<dict>
 		<key>hz.module.controller.name</key>
-		<string>HZTestViewController</string>
+		<string>HZPlistTestViewController</string>
 		<key>hz.module.name</key>
-		<string>Test</string>
+		<string>PlistTest</string>
 		<key>hz.module.sb.idf</key>
-		<string>kTestVcIdf</string>
+		<string>kPlistTestVcIdf</string>
 		<key>hz.module.sb.name</key>
 		<string>Main</string>
 	</dict>

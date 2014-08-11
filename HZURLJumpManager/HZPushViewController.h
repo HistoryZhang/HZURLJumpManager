@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "HZBaseViewController.h"
 
-@interface HZViewController : UIViewController
+@interface HZPushViewController : UIViewController
 
 @end

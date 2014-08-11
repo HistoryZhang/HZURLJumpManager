@@ -8,6 +8,6 @@
 
 #import "HZBaseViewController.h"
 
-@interface HZTestViewController : HZBaseViewController
+@interface HZPlistTestViewController : HZBaseViewController
 
 @end

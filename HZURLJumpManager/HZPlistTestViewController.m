@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 History. All rights reserved.
 //
 
-#import "HZTestViewController.h"
+#import "HZPlistTestViewController.h"
 
-@interface HZTestViewController ()
+@interface HZPlistTestViewController ()
 
 @end
 
-@implementation HZTestViewController
+@implementation HZPlistTestViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSString *title = self.moduleObject[@"title"];
+    if (title.length) {
+        self.title = title;
+    }
+    else {
+        self.title = @"未知";
+    }
 }
 
 - (void)didReceiveMemoryWarning

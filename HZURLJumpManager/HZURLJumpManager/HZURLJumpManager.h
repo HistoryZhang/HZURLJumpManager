@@ -12,13 +12,14 @@ extern NSString * const HZModuleNameKey;
 extern NSString * const HZModuleSbNameKey;
 extern NSString * const HZModuleSbIdfKey;
 extern NSString * const HZModuleIsPushKey;
+extern NSString * const HZModuleControllerNameKey;
 
 //extern NSString * const HZModuleNeedLoginKey;
 //extern NSString * const HZModuleDefaultCallbackKey;
 
 @interface HZURLJumpManager : NSObject
 + (instancetype)share;
-//- (void)registerModuleWithDictionary:(NSDictionary *)moduleDictionary;
+- (void)registerModuleWithDictionary:(NSDictionary *)moduleDictionary;
 - (void)pushToURL:(NSURL *)url fromNavigationController:(UINavigationController *)navigationControlle;
 - (void)pushToURLString:(NSString *)urlString fromNavigationController:(UINavigationController *)navigationController;
 - (void)presentToURL:(NSURL *)url fromViewController:(UIViewController *)viewController;
