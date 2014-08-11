@@ -7,7 +7,7 @@ We can push a viewcontroller like this:
 
 ```
 NSURL *url = [NSURL URLWithString:@"hzjump://go?url=Test"];
-            [[HZURLJumpManager share] pushToURL:url fromNavigationController:self.navigationController];
+[[HZURLJumpManager share] pushToURL:url fromNavigationController:self.navigationController];
 ```
 
 Or present like this:
