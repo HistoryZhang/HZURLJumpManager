@@ -26,14 +26,30 @@ You just need do follow steps:
 
 * Create a class Subclass of `HZBaseViewController` like `HZTestViewController`
 * Create a new ViewController in Storyboard, set the `Custom Class` be `HZTestViewController` and the `Storyboard ID` like `kTestVcIdf`
-* Add a dictionary in `HZURLJumpConfig.plist` with follow key and value
+* You can add module by two way: 
+	
+	* Add a dictionary in `HZURLJumpConfig.plist` with follow key and value 
 
-Key|Value
-:---:|:---:
-hz.module.controller.name | HZTestViewController
-hz.module.name | Test
-hz.module.sb.idf | kTestVcIdf
-hz.module.sb.name | Main
+		Key|Value
+		:---:|:---:
+		hz.module.controller.name | HZTestViewController
+		hz.module.name | Test
+		hz.module.sb.idf | kTestVcIdf
+		hz.module.sb.name | Main
+	* Use `- (void)registerModuleWithDictionary:(NSDictionary *)moduleDictionary;` in `+ (void)load;` Like this:	
+	
+	```
+	[[HZURLJumpManager share] registerModuleWithDictionary:@{
+                                                             HZModuleNameKey: @"RegisterTest",
+                                                             HZModuleSbNameKey: @"Main",
+                                                             HZModuleSbIdfKey: @"kRegisterTestVcIdf",
+                                                             HZModuleControllerNameKey: @"HZRegisterTestViewController"
+                                                             }];
+	```
+	If you use this way, you should set `_canRegisterModule = YES;` in `HZURLJumpManager`.
+-------
+ 
+
 
 * Use the URL protocol to jump the ViewController.You should set the url like this:`hzjump://go?url=Test&push=yes&key=value`.
 
