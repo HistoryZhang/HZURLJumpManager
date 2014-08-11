@@ -79,7 +79,7 @@
         <!--Plist Test View Controller-->
         <scene sceneID="kqe-3x-Xng">
             <objects>
-                <viewController storyboardIdentifier="kTestVcIdf" id="vGm-vy-X0b" customClass="HZPlistTestViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="kPlistTestVcIdf" id="vGm-vy-X0b" customClass="HZPlistTestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BPP-Iw-ebH"/>
                         <viewControllerLayoutGuide type="bottom" id="b4r-vC-4hb"/>
