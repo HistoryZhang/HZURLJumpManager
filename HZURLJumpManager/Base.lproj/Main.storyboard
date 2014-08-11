@@ -79,7 +79,7 @@
         <!--Plist Test View Controller-->
         <scene sceneID="kqe-3x-Xng">
             <objects>
-                <viewController storyboardIdentifier="kPlistTestVcIdf" id="vGm-vy-X0b" customClass="HZPlistTestViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="kTestVcIdf" id="vGm-vy-X0b" customClass="HZPlistTestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BPP-Iw-ebH"/>
                         <viewControllerLayoutGuide type="bottom" id="b4r-vC-4hb"/>
@@ -150,7 +150,7 @@
         <scene sceneID="iPI-iB-8hU">
             <objects>
                 <navigationController title="Present" definesPresentationContext="YES" id="fvo-2E-HXA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Register" id="kde-9N-VpO"/>
+                    <tabBarItem key="tabBarItem" title="Present" id="kde-9N-VpO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cbc-b3-I80">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

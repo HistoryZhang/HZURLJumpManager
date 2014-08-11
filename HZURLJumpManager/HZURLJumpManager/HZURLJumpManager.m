@@ -37,12 +37,15 @@ NSString * const HZGoHostKey                = @"go";
 @implementation HZURLJumpManager
 /**
  *  Read Module Config From plist File
- *  Other Way is Use registerModuleWithDictionary:.But In Next Version.
+ *  Other Way is Use - (void)registerModuleWithDictionary:(NSDictionary *)moduleDictionary;But In Next Version.
  */
 - (void)initModuleConfig
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"HZURLJumpConfig" ofType:@"plist"];
-    _moduleConfig = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    if (path.length) {
+        _moduleConfig = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    }
+    
 }
 - (instancetype)init
 {
@@ -86,7 +89,7 @@ NSString * const HZGoHostKey                = @"go";
  */
 - (void)pushToURL:(NSURL *)url fromNavigationController:(UINavigationController *)navigationController
 {
-    if (!navigationController) {
+    if (!navigationController || ![navigationController isKindOfClass:[UINavigationController class]]) {
         return;
     }
     NSDictionary *moduleInfo = [self analyzeURL:url];
@@ -132,7 +135,7 @@ NSString * const HZGoHostKey                = @"go";
  */
 - (void)presentToURL:(NSURL *)url fromViewController:(UIViewController *)viewController
 {
-    if (!viewController) {
+    if (!viewController || [viewController isKindOfClass:[UIViewController class]]) {
         return;
     }
     NSDictionary *moduleInfo = [self analyzeURL:url];
