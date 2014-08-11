@@ -75,7 +75,15 @@ NSString * const HZGoHostKey                = @"go";
 - (void)registerModuleWithDictionary:(NSDictionary *)moduleDictionary
 {
     if (_canRegisterModule) {
-        [_moduleConfig setObject:moduleDictionary forKey:moduleDictionary[HZModuleNameKey]];
+        NSString *sbName = moduleDictionary[HZModuleSbNameKey];
+        if (sbName.length) {
+            [_moduleConfig setObject:moduleDictionary forKey:moduleDictionary[HZModuleNameKey]];
+        }
+        else {
+            NSMutableDictionary *moduleDictionaryCopy = [moduleDictionary mutableCopy];
+            [moduleDictionaryCopy setObject:@"Main" forKey:HZModuleSbNameKey];
+            [_moduleConfig setObject:moduleDictionaryCopy forKey:moduleDictionary[HZModuleNameKey]];
+        }
     }
     else {
         NSAssert(false, @"你未开启手动注册开关,请自行在HZURLJumpManager中修改_canRegisterModule=YES");
