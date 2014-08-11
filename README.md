@@ -47,9 +47,6 @@ You just need do follow steps:
                                                              }];
 	```
 	If you use this way, you should set `_canRegisterModule = YES;` in `HZURLJumpManager`.
--------
- 
-
 
 * Use the URL protocol to jump the ViewController.You should set the url like this:`hzjump://go?url=Test&push=yes&key=value`.
 
