@@ -65,7 +65,7 @@ NSString * const HZGoHostKey                = @"go";
     return instance;
 }
 /**
- *  Next Version
+ *  Register Module Without plist
  *
  *  @param moduleDictionary moduleConfig
  */
